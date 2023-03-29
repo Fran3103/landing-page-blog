@@ -1,0 +1,76 @@
+@import url(/Sass/cssreload.css);
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+$Lightred-CTA-text: hsl(356, 100%, 66%);
+$Verylightred-CTA-hover-background: hsl(355, 100%, 74%);
+$Verydarkblue-headings: hsl(208, 49%, 24%);
+
+$White-text: hsl(0, 0%, 100%);
+$Grayishblue-footer-text: hsl(240, 2%, 79%);
+$Verydarkgrayishblue-body-copy: hsl(207, 13%, 34%);
+$Verydarkblackblue-footer-background: hsl(240, 10%, 16%);
+
+//Background gradient - Intro/CTA mobile nav:
+
+$Verylightred: hsl(13, 100%, 72%);
+$Lightred: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+
+$Verydarkgrayblue: hsl(237, 17%, 21%);
+$Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+
+$font-1:'Overpass';
+$font-2:'Ubuntu';
+body{
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header{
+    width: 100%;
+    
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    
+    
+    
+    
+    border-bottom-left-radius:150px 
+
+}
+.navegacion{
+    margin: 40px auto;
+    border-radius: 5px;
+    width: 330px;
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    a{
+        color: $Verydarkblue-headings;
+        font-family: $font-1;
+        font-weight: 700;
+    }
+    
+
+    .menu_desktop{
+        .lista{
+        a{
+            text-decoration: none;
+        }
+    }
+    }
+}
