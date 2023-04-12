@@ -12,7 +12,7 @@ $Verydarkblackblue-footer-background: hsl(240, 10%, 16%);
 
 //Background gradient - Intro/CTA mobile nav:
 
-$Verylightred: hsl(13, 100%, 72%);
+$Verylightred: #ff8f70;
 $Lightred: hsl(353, 100%, 62%);
 
 //Background gradient - body:
@@ -39,26 +39,44 @@ body{
 
 .header{
     width: 100%;
-    
     background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    
-    
-    
-    
-    border-bottom-left-radius:150px 
+    border-bottom-left-radius:150px;
+    height: 400px;
+    padding: 10px 25px;
+    .logos{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        .logo{
+            width: 70px;
+            height: 30px;
+        }
+        .burger{
+            height: 20px;
+            width: 20px;
+            display: flex;
+        }
+        .close{
+            width: 20px;
+            height: 20px;
+            display: none;
+        }
+    }
 
 }
 .navegacion{
     margin: 40px auto;
     border-radius: 5px;
     width: 330px;
-    
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-shadow: 0 4px 10px 1px rgba($color: #000000, $alpha: 0.7);
     a{
         color: $Verydarkblue-headings;
         font-family: $font-1;
@@ -67,10 +85,113 @@ body{
     
 
     .menu_desktop{
-        .lista{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        .arrow{
+            margin-left: 10px;
+        }
+            
         a{
             text-decoration: none;
         }
+        .titulo-menu{
+            font-size: 1.1rem;
+            text-align: center;
+            margin-left: 10px;
+            
+        }
+        
+        .lista{
+            background-color: rgba($color: #ff8f70, $alpha: 0.2);
+            padding: 30px;
+            width: 100%;
+            border-radius: 7px;
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            gap :10px;
+            font-size: 0.8rem;
+            margin: 15px 0;
+        }
+
+        
     }
+    .linea{
+        width: 100%;
+        border: 1px solid $Grayishblue-footer-text;
+        margin-top: 40px;
+    }
+    .login_desktop{
+        margin-top: 20px;
+        
+        ul{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin: 20px 0;
+
+            .sing-up{
+                padding: 10px 25px;
+                text-align: center;
+                font-size: 0.9rem;
+                color: $White-text;
+                background: linear-gradient((hsl(13, 100%, 72%), hsl(353, 100%, 62%)));
+                border-radius: 40px;
+            }
+        }
+        
+    }
+
+    
+}
+.cabecera{
+    margin-top: 20px;
+    .titulo{
+        margin: 0 29px;
+        text-align: center;
+        color: $White-text;
+        font-family: $font-2;
+        font-weight: 100;
+        font-size: 1.8rem;
+    }
+    .subTitulo{
+        margin: 20px 25px;
+        font-size: 1rem;
+        text-align: center;
+        color: $White-text;
+        font-family: $font-1;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 40px 0;
+
+
+        button{
+            border: none;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-family: $font-2;
+            font-weight: 800;
+        }
+        .btn_star{
+            color: $Lightred;
+            background-color: $White-text;
+            
+        }
+
+        .btn_learmore{
+            color: $White-text;
+            background-color: transparent;
+            border: 1px solid $White-text;
+        }
     }
 }
