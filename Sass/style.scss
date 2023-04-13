@@ -42,7 +42,7 @@ body{
     background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius:150px;
     height: 400px;
-    padding: 10px 25px;
+    padding: 0 25px;
     .logos{
         margin-top: 30px;
         display: flex;
@@ -152,7 +152,8 @@ body{
 .cabecera{
     margin-top: 20px;
     .titulo{
-        margin: 0 29px;
+
+        
         text-align: center;
         color: $White-text;
         font-family: $font-2;
@@ -194,4 +195,153 @@ body{
             border: 1px solid $White-text;
         }
     }
+}
+
+.designed{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $Verydarkblue-headings;
+        font-family: $font-2;
+        font-weight: 500;
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+    .editor-mobile{
+        width: 340px;
+        height: 330px;
+        margin: 40px 0;
+        }
+    .editor-desktop{
+        display: none;
+    }
+        
+    .texto_designed{
+        h3{
+            color: $Verydarkblue-headings;
+            font-family: $font-2;
+            font-size: 1.3rem;
+            margin: 30px 50px ;
+
+        }
+        p{
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: $Verydarkgrayblue;
+            font-family: $font-1;
+            margin: 10px 33px ;
+        }
+    }
+    
+}
+
+.phones{
+    width: 100vw;
+    height: 60%;
+    position: absolute;
+    z-index: 10;
+    top: 1500px;
+}
+.infrastructure{
+    margin: 280px 0;
+}
+.texto_infrastructure{
+    background-color: $Verydarkdesaturatedblue;
+    width: 100vw;
+    height: 100%;
+    padding: 140px 30px;
+    
+    text-align: center;
+    color: $White-text;
+    font-family: $font-1;
+    position: relative;
+    border-radius:0 120px 0 120px ;
+    h2{
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 20px 25px;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+.laptop{
+    .laptop-mobile{
+        width: 100vw;
+        height: 100%;
+        margin-top: -1000px;
+
+    }
+    .laptop-desktop{
+        display: none;
+    }
+    .texto_laptop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+    h3{
+        margin: 20px ;
+        color:$Verydarkblue-headings;
+        font-family: $font-2;
+    }
+    p{
+        font-size: 0.8rem;
+        margin: 0 30px;
+        font-family: $font-2;
+        line-height: 1.5;
+    }
+    }
+}
+
+.footer{
+    background-color: $Verydarkblackblue-footer-background;
+    border-radius: 0 100px 0 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin: 50px 0 ;
+
+    .logo{
+        width: 70px;
+        height: 25px;
+    }
+
+    .producto_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: $font-2;
+    }
+
+    .titulo_footer{
+        color: $White-text;
+        font-size: 0.8rem;
+    }
+    .secciones_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.6rem;
+        color: $Grayishblue-footer-text;
+
+    }
+
 }

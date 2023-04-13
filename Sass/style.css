@@ -18,7 +18,7 @@ body li {
   background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   border-bottom-left-radius: 150px;
   height: 400px;
-  padding: 10px 25px;
+  padding: 0 25px;
 }
 .header .logos {
   margin-top: 30px;
@@ -118,7 +118,6 @@ body li {
   margin-top: 20px;
 }
 .cabecera .titulo {
-  margin: 0 29px;
   text-align: center;
   color: hsl(0, 0%, 100%);
   font-family: "Ubuntu";
@@ -154,4 +153,141 @@ body li {
   color: hsl(0, 0%, 100%);
   background-color: transparent;
   border: 1px solid hsl(0, 0%, 100%);
+}
+
+.designed {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.designed h2 {
+  color: hsl(208, 49%, 24%);
+  font-family: "Ubuntu";
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.designed .editor-mobile {
+  width: 340px;
+  height: 330px;
+  margin: 40px 0;
+}
+.designed .editor-desktop {
+  display: none;
+}
+.designed .texto_designed h3 {
+  color: hsl(208, 49%, 24%);
+  font-family: "Ubuntu";
+  font-size: 1.3rem;
+  margin: 30px 50px;
+}
+.designed .texto_designed p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: hsl(237, 17%, 21%);
+  font-family: "Overpass";
+  margin: 10px 33px;
+}
+
+.phones {
+  width: 100vw;
+  height: 60%;
+  position: absolute;
+  z-index: 10;
+  top: 1500px;
+}
+
+.infrastructure {
+  margin: 280px 0;
+}
+
+.texto_infrastructure {
+  background-color: hsl(237, 23%, 32%);
+  width: 100vw;
+  height: 100%;
+  padding: 140px 30px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass";
+  position: relative;
+  border-radius: 0 120px 0 120px;
+}
+.texto_infrastructure h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 20px 25px;
+}
+.texto_infrastructure p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.laptop .laptop-mobile {
+  width: 100vw;
+  height: 100%;
+  margin-top: -1000px;
+}
+.laptop .laptop-desktop {
+  display: none;
+}
+.laptop .texto_laptop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  text-align: center;
+}
+.laptop .texto_laptop h3 {
+  margin: 20px;
+  color: hsl(208, 49%, 24%);
+  font-family: "Ubuntu";
+}
+.laptop .texto_laptop p {
+  font-size: 0.8rem;
+  margin: 0 30px;
+  font-family: "Ubuntu";
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 100px 0 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  margin: 50px 0;
+}
+.footer .logo {
+  width: 70px;
+  height: 25px;
+}
+.footer .producto_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: "Ubuntu";
+}
+.footer .titulo_footer {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+}
+.footer .secciones_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.6rem;
+  color: hsl(240, 2%, 79%);
 }/*# sourceMappingURL=style.css.map */
